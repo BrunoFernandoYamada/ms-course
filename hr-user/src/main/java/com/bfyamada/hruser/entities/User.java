@@ -42,12 +42,12 @@ public class User implements Serializable{
 		
 	}
 	
-	public User(Long id, String name, String email, String passeord) {
+	public User(Long id, String name, String email, String password) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.email = email;
-		this.password = passeord;
+		this.password = password;
 	}
 	public Long getId() {
 		return id;
@@ -67,11 +67,11 @@ public class User implements Serializable{
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getPasseword() {
+	public String getPassword() {
 		return password;
 	}
-	public void setPassword(String passeord) {
-		this.password = passeord;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 	
 	public Set<Role> getRoles() {
